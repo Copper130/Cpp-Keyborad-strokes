@@ -37,7 +37,7 @@ std::map<char, int> keyMap = {
     {'Y', 0x59}, {'Z', 0x5A}, {' ', 0x20}
 };
 
-// Open the notepad
+// Runs the text entered though windows GUI+R run 
 void Windows_Run(std::string run) {
     // Simulate Win + R to open the Run dialog
     PressKey(VK_RWIN); // Press Windows key
@@ -47,7 +47,7 @@ void Windows_Run(std::string run) {
 
     Sleep(300); // Wait for the Run dialog to open
 
-    // Type "notepad" and press Enter
+    
     TypeString(run);
     PressKey(VK_RETURN); // Press Enter
     ReleaseKey(VK_RETURN); // Release Enter
@@ -85,7 +85,7 @@ int main() {
     Sleep(1000);
     TypeString("The bee, of course, flies anyway...\n");
     Sleep(1000);
-    TypeString("Bees don’t care what humans think is impossible.\n");
+    TypeString("Bees donâ€™t care what humans think is impossible.\n");
     Sleep(1000);
     TypeString("Yellow, black. Yellow, black. Yellow, black. Yellow, black.\n");
     Sleep(1000);
