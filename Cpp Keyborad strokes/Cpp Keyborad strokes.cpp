@@ -51,7 +51,7 @@ void Windows_Run(std::string run) {
     TypeString(run);
     PressKey(VK_RETURN); // Press Enter
     ReleaseKey(VK_RETURN); // Release Enter
-    Sleep(300);// Wait for the Notepad to open
+    Sleep(300);// Wait for the Program to open
 }
 
 // Function to open a URL in the default web browser
